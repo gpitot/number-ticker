@@ -57,7 +57,7 @@ function setUp() {
     const template = document.getElementById('number-col-template');
     const parent = document.getElementById('number-ticker');
 
-    const singleTime = 1000;
+    const singleTime = 5000;
    
 
     for (let i=0;i<9;i+=1) {
