@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+#number-ticker {
+    display:flex;
+    height:50px;
+    overflow:hidden;
+}
+
+.number-col {
+    display:flex;
+    flex-direction:column;
+    width:50px;
+    margin-top:-710px;
+    
+    transition:transform 0.4s linear;
+}   
+
+.no-transition {
+    transition: none !important;
+}
+
+.col-num {
+    width:100%;
+    height:50px;
+    margin:10px 0;
+}
+
+.col-num svg {
+    width:100%;
+    height:100%;
+}
+
+
+.singles {
+    animation: slideSingles 5s linear infinite; 
+}
+
+@keyframes slideSingles {
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(700px);
+    }
+}
+
+
+
+#number-col-template {
+    display:none;
+}
+
